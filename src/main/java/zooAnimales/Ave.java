@@ -23,11 +23,11 @@ public class Ave extends Animal {
         return "volar";}
 
     public void crearHalcon(String nombre, int edad, String genero){
-        new Ave(nombre, edad, "montañas", genero, "café glorioso");
+        new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
         halcones += 1;
     }
     public void crearAguila(String nombre, int edad, String genero){
-        new Ave(nombre, edad, "montañas", genero, "blanco y amarillo");
+        new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
         halcones += 1;
     }
     public String getColorPlumas(){
