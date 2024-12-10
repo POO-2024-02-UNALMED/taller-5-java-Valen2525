@@ -32,7 +32,7 @@ public class Zona{
 	public  ArrayList<Animal> getAnimales() {
 		return animales;
 	}
-    public void agregarAnimal(Animal animal) {
+    public void agregarAnimales(Animal animal) {
         this.animales.add(animal);}
     
     public int cantidadAnimales() {
