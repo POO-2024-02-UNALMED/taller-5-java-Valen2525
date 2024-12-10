@@ -34,7 +34,7 @@ public String toString(){
         return "Mi nombre es "+ getNombre()+", tengo una edad de " +getEdad()+ ", habito en "+getHabitat()+" y mi genero es "+getGenero();
     } else{
         return "Mi nombre es "+ getNombre()+", tengo una edad de " +getEdad()+ ", habito en "+getHabitat()+" y mi genero es "+getGenero()+
-        ", la zona en la que me ubico es "+this.zona.getZoo().getNombre()+", en el "+getZona().getZoo().getNombre();
+        ", la zona en la que me ubico es "+zona.get(0).getNombre()+", en el "+ zona.get(0).getZoo().get(0).getNombre()+".";
       }
 }
 public String getNombre() {

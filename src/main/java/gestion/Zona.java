@@ -20,6 +20,9 @@ public class Zona{
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    public ArrayList <Zoologico> getZoo(){
+        return zoo;
+    }
     
     public void agregarAnimal(Animal animal) {
         this.animales.add(animal);}
