@@ -2,7 +2,7 @@ package zooAnimales;
 import gestion.*;
 
 public class Animal{
-    private static int totalAnimales;
+  private static int totalAnimales;
   private String nombre;
   private int edad;
   private String habitat;
@@ -14,6 +14,7 @@ public Animal(String nombre, int edad, String habitat, String genero) {
   this.edad = edad;
   this.habitat = habitat;
   this.genero = genero;
+  totalAnimales += 1;
 }
 public Animal(){
     this(null, 0, null, null);
@@ -35,7 +36,7 @@ public String toString(){
         return "Mi nombre es "+ getNombre()+", tengo una edad de " +getEdad()+ ", habito en "+getHabitat()+" y mi genero es "+getGenero();
     } else{
         return "Mi nombre es "+ getNombre()+", tengo una edad de " +getEdad()+ ", habito en "+getHabitat()+" y mi genero es "+getGenero()+
-        ", la zona en la que me ubico es "+getZona().getNombre()+", en el "+ getZona().getZoo().get(0).getNombre()+".";
+        ", la zona en la que me ubico es "+getZona().getNombre()+", en el "+ getZona().getZoo().getNombre()+".";
       }
 }
 public static void setTotalAnimales(int totalAnimales) {

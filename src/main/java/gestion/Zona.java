@@ -4,14 +4,14 @@ import zooAnimales.*;
 
 public class Zona{
     private String nombre;
-    private ArrayList <Zoologico> zoo;
+    private Zoologico zoo;
     private ArrayList <Animal> animales; 
 
-    public Zona(){}
-    public Zona(String nombre) {
+    public Zona(){this(null,null);}
+    public Zona(String nombre, Zoologico zoo) {
     this.nombre = nombre;
+    this.zoo = zoo;
     this.animales = new ArrayList <Animal>();
-    this.zoo = new ArrayList <Zoologico>();
     }
     
     public String getNombre() {
@@ -20,10 +20,18 @@ public class Zona{
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public ArrayList <Zoologico> getZoo(){
+    public Zoologico getZoo(){
         return zoo;
     }
-    
+    public void getZoo(Zoologico zoo){
+        this.zoo = zoo;
+    }
+    public void setAnimales(ArrayList<Animal> animales) {
+		this.animales=animales;
+	}
+	public  ArrayList<Animal> getAnimales() {
+		return animales;
+	}
     public void agregarAnimal(Animal animal) {
         this.animales.add(animal);}
     
